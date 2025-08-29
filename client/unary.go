@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func sayHelloCall(client pb.GreetServicesClient) {
+func callSayHelloCall(client pb.GreetServicesClient) {
 	ctx, cancel := context.WithTimeout(context.Background(),time.Second)
 	defer cancel()
 

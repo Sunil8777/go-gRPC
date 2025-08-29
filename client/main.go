@@ -24,7 +24,8 @@ func main() {
 		Names: []string{"ab","cd","ef"},
 	}
 
-	// sayHelloCall(client)
-	sayHelloServerStreaming(client, name)
-
+	// callSayHelloCall(client)
+	// callSayHelloServerStreaming(client, name)
+	// callSayHelloClientStreaming(client, name)
+	callHelloBidirectional(client,name)
 }

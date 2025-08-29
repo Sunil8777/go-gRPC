@@ -7,7 +7,7 @@ import (
 	"log"
 )
 
-func sayHelloServerStreaming(client pb.GreetServicesClient, name *pb.NameList) {
+func callSayHelloServerStreaming(client pb.GreetServicesClient, name *pb.NameList) {
 	log.Println("Streaming started")
 
 	res, err := client.SayHelloServerStreaming(context.Background(), name)
